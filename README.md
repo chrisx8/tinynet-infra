@@ -82,7 +82,6 @@ pre-commit autoupdate
 - [Jellyfin](https://jellyfin.org/)
 - [Minflux](https://miniflux.app/)
 - [Nextcloud](https://nextcloud.com/)
-- [Vaultwarden](https://github.com/dani-garcia/vaultwarden)
 
 ## Resources
 

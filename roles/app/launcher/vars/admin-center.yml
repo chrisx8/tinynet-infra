@@ -11,20 +11,16 @@ page_title: Admin Center
 #   Required: name, icon, url
 #   Optional: newtab (deafult = true)
 services:
-  - name: Applications
-    icon: fa-solid fa-rocket
+  - name: Identities
+    icon: fa-solid fa-fingerprint
     apps:
-      - name: Identity Management
-        icon: fa-solid fa-user-gear
+      - name: IPA Identity Management
+        icon: fa-solid fa-id-badge
         url: https://net-ipa.arb.chrisx.xyz/ipa/ui/
         newtab: true
       - name: Keycloak Admin Console
         icon: fa-solid fa-user-gear
         url: https://sso.chrisx.xyz/admin/chrisx/console/
-        newtab: true
-      - name: Vaultwarden Admin Panel
-        icon: fa-solid fa-key
-        url: https://vaultwarden.chrisx.xyz/admin
         newtab: true
   - name: Network
     icon: fa-solid fa-network-wired

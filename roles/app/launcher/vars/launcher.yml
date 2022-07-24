@@ -22,10 +22,6 @@ services:
         icon: fa-solid fa-code-branch
         url: https://gitea.chrisx.xyz
         newtab: true
-      - name: Vaultwarden
-        icon: fa-solid fa-key
-        url: https://vaultwarden.chrisx.xyz
-        newtab: true
   - name: Internal
     icon: fa-solid fa-shield-halved
     apps:

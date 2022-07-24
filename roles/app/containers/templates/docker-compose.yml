@@ -26,7 +26,6 @@ services:
       - gitea
       - keycloak
       - miniflux
-      - vaultwarden
     security_opt:
       - no-new-privileges
     restart: always
@@ -61,20 +60,7 @@ services:
     security_opt:
       - no-new-privileges
     restart: unless-stopped
-  vaultwarden:
-    container_name: vaultwarden
-    image: vaultwarden/server:alpine
-    env_file: ./vaultwarden.env
-    user: nobody:nogroup
-    volumes:
-      - vaultwarden_data:/data:Z
-    cap_drop:
-      - all
-    security_opt:
-      - no-new-privileges
-    restart: unless-stopped
 
 volumes:
   cloudflared:
   gitea_data:
-  vaultwarden_data:

@@ -41,16 +41,3 @@
     db: miniflux
     name: miniflux
     password: "{{ postgres_miniflux_password }}"
-
-- name: Generate new password for PostgreSQL vaultwarden user
-  ansible.builtin.set_fact:
-    postgres_vaultwarden_password: "{{ lookup('password', '/dev/null chars=ascii_letters,digits length=64') }}"
-- name: Create vaultwarden database
-  community.postgresql.postgresql_db:
-    name: vaultwarden
-    state: present
-- name: Create PostgreSQL vaultwarden user
-  community.postgresql.postgresql_user:
-    db: vaultwarden
-    name: vaultwarden
-    password: "{{ postgres_vaultwarden_password }}"

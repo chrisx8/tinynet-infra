@@ -19,11 +19,6 @@
     src: miniflux.env.j2
     dest: ~/containers/miniflux.env
     mode: 0644
-- name: Install Vaultwarden env file
-  ansible.builtin.template:
-    src: vaultwarden.env.j2
-    dest: ~/containers/vaultwarden.env
-    mode: 0644
 
 - name: Install Gitea templates
   ansible.builtin.copy:
